@@ -92,7 +92,7 @@ body .page0 {
   width: 100vw;
 }
 body .page0 .mesimages {
-  background-image: url(/assets/FOOTBALL.JPG);
+  background-image: url(../assets/FOOTBALL.JPG);
   width: 35%;
   height: 100vh;
   background-position: center;
@@ -203,7 +203,7 @@ body .page1 .background {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(/assets/Reflexe\ 4.jpeg);
+  background-image: url(../assets/Reflexe\ 4.jpeg);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -325,7 +325,7 @@ body .page3 h2 {
     align-items: center;
   }
   body .page0 .mesimages {
-    background-image: url(/assets/TENNIS1.JPG);
+    background-image: url(../assets/TENNIS1.JPG);
     width: 100vw;
     height: 10vh;
     background-position: center;

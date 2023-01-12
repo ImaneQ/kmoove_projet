@@ -87,7 +87,7 @@ body .swiper-wrapper {
 body .swiper-wrapper .box {
   position: relative;
   width: 40vw;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   height: 500px;
   display: flex;
   justify-content: center;
@@ -234,7 +234,7 @@ body .bgd_image {
   left: 0;
   right: 0;
   display: block;
-  background-image: url(/assets/jeu\ par\ 4.JPG);
+  background-image: url(../assets/jeu\ par\ 4.JPG);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

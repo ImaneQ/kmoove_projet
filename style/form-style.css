@@ -12,7 +12,7 @@
   position: absolute;
   z-index: 2000;
   font-family: "Press Start 2P", cursive;
-  font-size: 9vh;
+  font-size: 7vh;
   width: 300px;
   color: rgb(255, 255, 255);
   display: flex;
@@ -37,16 +37,16 @@ body header .navbar {
   position: fixed;
   z-index: 100000;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
   list-style: none;
   padding: 0;
-  font-family: "Russo One", sans-serif;
+  font-family: "Press Start 2P", cursive;
 }
 body header .navbar a {
-  color: #fff;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 body header .navbar a img {
@@ -74,12 +74,13 @@ body header .navbar .nav-links.mobile-menu {
   margin-left: 0;
 }
 body header .navbar .nav-links ul {
-  font-size: 2.2em;
+  font-size: 2em;
   list-style: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  height: 75vh;
 }
 body header .navbar .nav-links ul li {
   margin: 25px 0;
@@ -363,5 +364,10 @@ body form ul input[type=button]:hover {
 @media screen and (max-width: 550px) {
   body form ul {
     width: 100vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  #ctcnous {
+    display: none;
   }
 }/*# sourceMappingURL=form-style.css.map */

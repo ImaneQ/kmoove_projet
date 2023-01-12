@@ -130,7 +130,7 @@ body {
 		// justify-content: center;
 
 		.mesimages {
-			background-image: url(/assets/FOOTBALL.JPG);
+			background-image: url(../assets/FOOTBALL.JPG);
 			width: 35%;
 			height: 100vh;
 			background-position: center;
@@ -179,8 +179,6 @@ body {
 
 			.text {
 				display: flex;
-				// margin-right: auto;
-				// margin-left: auto;
 				width: auto;
 
 
@@ -277,7 +275,7 @@ body {
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
-			background-image: url(/assets/Reflexe\ 4.jpeg);
+			background-image: url(../assets/Reflexe\ 4.jpeg);
 			height: 100%;
 			display: flex;
 			flex-direction: column;
@@ -419,17 +417,6 @@ body {
 			height: 100%;
 		}
 
-		// p {
-		// 	height: ;
-		// 	display: flex;
-		// 	position: relative;
-		// 	align-items: center;
-		// 	color: rgb(255, 255, 255);
-		// 	font-size: 16px;
-		// 	background: linear-gradient(rgba(12, 1, 51, 0.461), rgba(10, 10, 10, 0.447));
-		// }
-
-
 
 		h2 {
 			color: rgb(51, 255, 0);
@@ -453,7 +440,7 @@ body {
 
 			.mesimages {
 
-				background-image: url(/assets/TENNIS1.JPG);
+				background-image: url(../assets/TENNIS1.JPG);
 				width: 100vw;
 				height: 10vh;
 				background-position: center;
@@ -496,11 +483,6 @@ body {
 					.pourcentage_1,
 					.pourcentage_2,
 					.pourcentage_3 {
-						// width: 30%;
-						// width: fit-content;
-						// height: 60%;
-						// font-size: 10px;
-						// padding: 0.5rem;
 
 						p {
 							width: auto;
@@ -619,16 +601,6 @@ body {
 				font-size: 0.8em;
 				margin: auto;
 			}
-
-			// .images {
-			// 	display: flex;
-			// 	width: 90%;
-			// 	flex: 2 2 20em;
-
-			// 	img {
-			// 		display: flex;
-			// 		flex: 2 2 20em; 
-			// 	}
 
 
 		}
