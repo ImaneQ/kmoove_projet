@@ -1,0 +1,437 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;500&family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Chakra Petch", sans-serif;
+  height: 400vh;
+  width: 100vw;
+  background: linear-gradient(321deg, rgb(0, 0, 0) 19%, rgb(9, 0, 11) 23%, rgb(18, 0, 22) 27%, rgb(20, 0, 25) 28%, rgb(40, 1, 50) 32%, rgb(54, 2, 69) 35%, rgb(64, 2, 81) 38%, rgb(78, 2, 100) 41%, rgb(88, 2, 113) 45%, rgb(1, 12, 113) 83%, rgb(38, 26, 98) 93%, rgb(6, 29, 201) 98%);
+  margin: auto;
+}
+body header .navbar {
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  font-family: "Russo One", sans-serif;
+}
+body header .navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+body header .navbar a img {
+  width: 150px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+body header .navbar .nav-links {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  margin-left: -100%;
+  transition: all 0.5s ease;
+}
+body header .navbar .nav-links.mobile-menu {
+  margin-left: 0;
+}
+body header .navbar .nav-links ul {
+  font-size: 2.2em;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+body header .navbar .nav-links ul li {
+  margin: 25px 0;
+}
+body header .navbar .nav-links ul .active a {
+  color: orangered;
+  font-weight: 600;
+}
+body header .navbar .nav-links ul .active li {
+  margin: 0 25px;
+}
+body header .navbar img:nth-child(3) {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  top: 18px;
+  right: 30px;
+}
+body header .navbar img:nth-child(3):hover {
+  transform: rotateZ(50deg);
+  transition: 0.5s;
+}
+body .page0 {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+body .page0 .mesimages {
+  background-image: url(/assets/FOOTBALL.JPG);
+  width: 35%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .page0 .titre_infos_pourcentages {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+}
+body .page0 .titre_infos_pourcentages .titre_infos {
+  display: flex;
+  flex-direction: column;
+}
+body .page0 .titre_infos_pourcentages .titre_infos h1 {
+  color: rgb(0, 255, 51);
+  font-size: 2.5em;
+  text-align: center;
+  margin: auto;
+}
+body .page0 .titre_infos_pourcentages .titre_infos ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  color: #fff;
+  list-style-type: "👍";
+  font-size: 1.2em;
+}
+body .page0 .titre_infos_pourcentages .text {
+  display: flex;
+  width: auto;
+}
+body .page0 .titre_infos_pourcentages .chiffre_pourcentages {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  justify-content: space-between;
+  color: rgb(0, 255, 51);
+  margin: auto;
+  font-family: "Asap Condensed", sans-serif;
+}
+body .page0 .titre_infos_pourcentages .chiffre_pourcentages .pourcentage_1 {
+  box-shadow: 5px 8px 2px rgba(0, 45, 0, 0.491);
+  padding: 2px;
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.087);
+}
+body .page0 .titre_infos_pourcentages .chiffre_pourcentages .pourcentage_1 span {
+  font-weight: 900;
+  font-size: 3em;
+}
+body .page0 .titre_infos_pourcentages .chiffre_pourcentages .pourcentage_1 p {
+  width: 200px;
+}
+body .page0 .titre_infos_pourcentages .chiffre_pourcentages .pourcentage_2 {
+  box-shadow: 5px 8px 2px rgba(0, 45, 0, 0.491);
+  background-color: rgba(128, 128, 128, 0.087);
+  width: 200px;
+  height: auto;
+  padding: 2px;
+  border-radius: 20px;
+  text-align: center;
+}
+body .page0 .titre_infos_pourcentages .chiffre_pourcentages span {
+  font-weight: 900;
+  font-size: 3em;
+}
+body .page0 .titre_infos_pourcentages .chiffre_pourcentages p {
+  width: 200px;
+}
+body .page0 .titre_infos_pourcentages .pourcentage_3 {
+  background-color: rgba(128, 128, 128, 0.087);
+  box-shadow: 5px 8px 2px rgba(0, 45, 0, 0.491);
+  padding: 2px;
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+  text-align: center;
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+}
+body .page0 .titre_infos_pourcentages .pourcentage_3 span {
+  font-weight: 900;
+  font-size: 3em;
+}
+body .page0 .titre_infos_pourcentages .pourcentage_3 p {
+  width: 200px;
+}
+body .page0 p {
+  color: #fff;
+}
+body .page1 {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  margin: auto;
+}
+body .page1 .background {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/assets/Reflexe\ 4.jpeg);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body .page1 .background h2 {
+  margin-top: 20px;
+  color: indigo;
+  justify-content: center;
+  display: flex;
+  font-size: 2.5em;
+}
+body .page1 .background h2 img {
+  height: 100px;
+  top: 0%;
+}
+body .page1 .background h3 {
+  color: rgb(243, 243, 255);
+  font-size: 2em;
+}
+body .page1 .background .paragraphe-transparent {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 30%;
+  max-width: 700px;
+  height: 70%;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(7px);
+  box-shadow: 5px 8px 2px rgba(0, 0, 0, 0.073);
+  padding: 10px;
+  display: flex;
+  margin-left: 20px;
+  background: linear-gradient(rgba(12, 1, 51, 0.461), rgba(105, 105, 105, 0.447));
+  margin-top: 20px;
+}
+body .page1 .background .paragraphe-transparent p {
+  display: flex;
+  justify-content: center;
+  line-height: 25px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+body .page2 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+body .page2 .paragraphe2-transparent {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 70%;
+  height: 400px;
+  line-height: 23px;
+  color: #fff;
+  justify-content: center;
+  display: flex;
+  text-align: start;
+  margin: auto;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+body .page2 h2 {
+  color: rgb(51, 255, 0);
+  font-size: 2.5em;
+  z-index: 1;
+  justify-content: flex-start;
+  margin-top: 30px;
+  display: flex;
+  margin-left: 130px;
+}
+body .page2 h2 img {
+  height: 100px;
+  position: relative;
+  top: -22%;
+}
+body .page2 h3 {
+  position: absolute;
+  display: flex;
+  color: rgb(243, 243, 255);
+  font-size: 1.5em;
+  margin-left: 130px;
+  margin-bottom: 50px;
+}
+body .page2 .images {
+  display: flex;
+  width: 40vw;
+  max-height: 30%;
+  justify-content: space-around;
+  margin: auto;
+}
+body .page3 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+body .page3 #myVideo {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+body .page3 h2 {
+  color: rgb(51, 255, 0);
+  font-size: 2.5em;
+  justify-content: center;
+  display: flex;
+}
+
+@media screen and (max-width: 830px) and (min-width: 350px) {
+  body {
+    margin: 0%;
+    width: auto;
+  }
+  body .page0 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .page0 .mesimages {
+    background-image: url(/assets/TENNIS1.JPG);
+    width: 100vw;
+    height: 10vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  body .page0 p {
+    padding-top: 1rem;
+  }
+  body .page0 .titre_infos_pourcentages {
+    display: flex;
+  }
+  body .page0 .titre_infos_pourcentages .titre_infos h1 {
+    font-size: 1.2em;
+    padding: 1rem;
+  }
+  body .page0 .titre_infos_pourcentages .titre_infos ul li {
+    font-size: 0.8em;
+    text-align: center;
+    margin: auto;
+  }
+  body .page0 .titre_infos_pourcentages .chiffre_pourcentages {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+  }
+  body .page0 .titre_infos_pourcentages .chiffre_pourcentages .pourcentage_1 p,
+body .page0 .titre_infos_pourcentages .chiffre_pourcentages .pourcentage_2 p,
+body .page0 .titre_infos_pourcentages .chiffre_pourcentages .pourcentage_3 p {
+    width: auto;
+  }
+  body .page0 .titre_infos_pourcentages .chiffre_pourcentages .pourcentage_1 span,
+body .page0 .titre_infos_pourcentages .chiffre_pourcentages .pourcentage_2 span,
+body .page0 .titre_infos_pourcentages .chiffre_pourcentages .pourcentage_3 span {
+    font-size: 15px;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+  }
+  footer div.social {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.4em;
+    flex-direction: row;
+    margin-top: 0.5em;
+  }
+  footer .social i {
+    color: #bac6d9;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 750px) {
+  body .page1 .background {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+  }
+  body .page1 .background .paragraphe-transparent {
+    font-size: 1vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 840px) {
+  body .page2 {
+    display: flex;
+  }
+  body .page2 h2 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 1.8em;
+    justify-content: left;
+  }
+  body .page2 h3 {
+    font-size: 0.8em;
+    margin: auto;
+  }
+  body .page2 .images {
+    display: flex;
+  }
+  body .page2 .images img {
+    width: 30VW;
+  }
+}
+@media screen and (max-width: 540px) {
+  body .page2 {
+    display: flex;
+  }
+  body .page2 h2 {
+    font-size: 1.8em;
+    justify-content: center;
+  }
+  body .page2 h3 {
+    font-size: 0.8em;
+    margin: auto;
+  }
+}/*# sourceMappingURL=Onepage-style.css.map */

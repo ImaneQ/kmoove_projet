@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#ctcnous {
+  position: absolute;
+  z-index: 2000;
+  font-family: "Press Start 2P", cursive;
+  font-size: 9vh;
+  width: 300px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  text-align: center;
+  align-items: flex-end;
+  top: 30%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(297deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 25%, rgb(151, 1, 162) 100%);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  overflow: hidden;
+}
+body header .navbar {
+  position: fixed;
+  z-index: 100000;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  font-family: "Russo One", sans-serif;
+}
+body header .navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+body header .navbar a img {
+  width: 150px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+body header .navbar .nav-links {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  margin-left: -100%;
+  transition: all 0.5s ease;
+}
+body header .navbar .nav-links.mobile-menu {
+  margin-left: 0;
+}
+body header .navbar .nav-links ul {
+  font-size: 2.2em;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+body header .navbar .nav-links ul li {
+  margin: 25px 0;
+}
+body header .navbar .nav-links ul .active a {
+  color: orangered;
+  font-weight: 600;
+}
+body header .navbar .nav-links ul .active li {
+  margin: 0 25px;
+}
+body header .navbar img:nth-child(3) {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  top: 18px;
+  right: 30px;
+}
+body header .navbar img:nth-child(3):hover {
+  transform: rotateZ(50deg);
+  transition: 0.5s;
+}
+body .container {
+  z-index: 0;
+  height: 100px;
+  width: 100px;
+  perspective: 100px;
+  margin: 100px auto 0;
+}
+body .container .cube {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  -webkit-animation: spin 30s linear infinite;
+          animation: spin 30s linear infinite;
+}
+body .container .cube .face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+body .container .cube .top {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateX(90deg) translateZ(100px);
+}
+body .container .cube .bottom {
+  background: linear-gradient(346deg, rgb(153, 24, 24) 0%, rgb(87, 3, 3) 73%);
+  transform: rotateX(-90deg) translateZ(100px);
+}
+body .container .cube .right {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateY(90deg) translateZ(100px);
+}
+body .container .cube .left {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateY(-90deg) translateZ(100px);
+}
+body .container .cube .front {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateX(0deg) translateZ(100px);
+}
+body .container .cube .back {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateX(-180deg) translateZ(100px);
+}
+body .cube2 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  -webkit-animation: spin 20s linear infinite;
+          animation: spin 20s linear infinite;
+}
+body .cube2 .face2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+body .cube2 .top {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateX(90deg) translateZ(100px);
+}
+body .cube2 .bottom {
+  background: linear-gradient(346deg, rgb(153, 24, 24) 0%, rgb(87, 3, 3) 73%);
+  transform: rotateX(-90deg) translateZ(100px);
+}
+body .cube2 .right {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateY(90deg) translateZ(100px);
+}
+body .cube2 .left {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateY(-90deg) translateZ(100px);
+}
+body .cube2 .front {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateX(0deg) translateZ(100px);
+}
+body .cube2 .back {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateX(-180deg) translateZ(100px);
+}
+body .cube3 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  -webkit-animation: spin 50s linear infinite;
+          animation: spin 50s linear infinite;
+}
+body .cube3 .face3 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  -webkit-animation: bigger 50s linear infinite;
+          animation: bigger 50s linear infinite;
+}
+body .cube3 .top {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateX(90deg) translateZ(100px);
+}
+body .cube3 .bottom {
+  background: linear-gradient(346deg, rgb(153, 24, 24) 0%, rgb(87, 3, 3) 73%);
+  transform: rotateX(-90deg) translateZ(100px);
+}
+body .cube3 .right {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateY(90deg) translateZ(100px);
+}
+body .cube3 .left {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateY(-90deg) translateZ(100px);
+}
+body .cube3 .front {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateX(0deg) translateZ(100px);
+}
+body .cube3 .back {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateX(-180deg) translateZ(100px);
+}
+@-webkit-keyframes spin {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+body form ul {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  position: relative;
+  margin-top: 0;
+  width: 40vw;
+  margin-right: 1vw;
+  height: 100vh;
+  padding: 20px 20px 10px 20px;
+  font: 13px "Lucida Sans Unicode";
+}
+body form ul li {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  margin: 10px 0 0 0;
+}
+body form ul li label {
+  padding: 0px;
+  font-weight: bold;
+}
+body form ul li label .required {
+  color: red;
+}
+body form ul li .field-divided,
+body form ul li .field-long {
+  margin-right: 10px;
+  width: 40%;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.235);
+  border-radius: 12px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 4px solid #7a0404;
+  padding: 7px;
+  margin: 0px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  outline: none;
+  color: #fff;
+}
+body form ul li .field-divided:focus,
+body form ul li .field-long:focus {
+  box-shadow: 0 0 8px #88D5E9;
+  border: 1px solid #88D5E9;
+}
+body form ul li .field-long {
+  width: 60%;
+}
+body form ul li .field-long:focus {
+  box-shadow: 0 0 8px #88D5E9;
+  border: 1px solid #88D5E9;
+}
+body form ul .field-select {
+  width: 60%;
+  align-items: center;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.235);
+  border-radius: 12px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 4px solid #7a0404;
+  padding: 7px;
+  margin: 0px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  outline: none;
+  color: #fff;
+}
+body form ul .field-select:focus {
+  box-shadow: 0 0 8px #88D5E9;
+  border: 1px solid #88D5E9;
+}
+body form ul .field-textarea {
+  height: 200px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.235);
+  border-radius: 12px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 4px solid #7a0404;
+  padding: 7px;
+  margin: 0px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  outline: none;
+  color: #fff;
+}
+body form ul input[type=submit],
+body form ul input[type=button] {
+  background-image: linear-gradient(297deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 25%, rgb(151, 1, 162) 100%);
+  padding: 8px 15px 8px 15px;
+  border: none;
+  color: #fff;
+  border-radius: 12px;
+}
+body form ul input[type=submit]:hover,
+body form ul input[type=button]:hover {
+  background: #4691A4;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+@media screen and (max-width: 950px) {
+  body form ul {
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 550px) {
+  body form ul {
+    width: 100vw;
+  }
+}/*# sourceMappingURL=form-style.css.map */

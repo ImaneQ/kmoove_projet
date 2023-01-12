@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(297deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 25%, rgb(151, 1, 162) 100%);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+body img {
+  max-width: 50%;
+  min-width: 15%;
+  width: 15%;
+  position: absolute;
+  z-index: 10000;
+}
+body ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 1.1em;
+}
+body #acceuil {
+  position: absolute;
+  z-index: 2000;
+  font-family: "Press Start 2P", cursive;
+  font-size: 3vw;
+  color: rgb(1, 247, 255);
+  display: flex;
+  text-align: center;
+  align-items: flex-end;
+  top: 40%;
+  justify-content: center;
+  transform: translateY(-50%);
+}
+body .acceuil {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(297deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 25%, rgb(151, 1, 162) 100%);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  overflow: hidden;
+}
+body .acceuil .container_home_btn {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: 15%;
+  max-width: 20%;
+  max-width: 400px;
+  min-width: 100px;
+}
+@-webkit-keyframes spin1 {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+@keyframes spin1 {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+body .acceuil .container {
+  z-index: 0;
+  height: 100px;
+  width: 100px;
+  perspective: 100px;
+  margin: 100px auto 0;
+}
+body .acceuil .container .cube {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  -webkit-animation: spin 30s linear infinite;
+          animation: spin 30s linear infinite;
+}
+body .acceuil .container .cube .face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+body .acceuil .container .cube .top {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateX(90deg) translateZ(100px);
+}
+body .acceuil .container .cube .bottom {
+  background: linear-gradient(346deg, rgb(153, 24, 24) 0%, rgb(87, 3, 3) 73%);
+  transform: rotateX(-90deg) translateZ(100px);
+}
+body .acceuil .container .cube .right {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateY(90deg) translateZ(100px);
+}
+body .acceuil .container .cube .left {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateY(-90deg) translateZ(100px);
+}
+body .acceuil .container .cube .front {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateX(0deg) translateZ(100px);
+}
+body .acceuil .container .cube .back {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateX(-180deg) translateZ(100px);
+}
+body .acceuil .cube2 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  -webkit-animation: spin 20s linear infinite;
+          animation: spin 20s linear infinite;
+}
+body .acceuil .cube2 .face2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+body .acceuil .cube2 .top {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateX(90deg) translateZ(100px);
+}
+body .acceuil .cube2 .bottom {
+  background: linear-gradient(346deg, rgb(153, 24, 24) 0%, rgb(87, 3, 3) 73%);
+  transform: rotateX(-90deg) translateZ(100px);
+}
+body .acceuil .cube2 .right {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateY(90deg) translateZ(100px);
+}
+body .acceuil .cube2 .left {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateY(-90deg) translateZ(100px);
+}
+body .acceuil .cube2 .front {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateX(0deg) translateZ(100px);
+}
+body .acceuil .cube2 .back {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateX(-180deg) translateZ(100px);
+}
+@-webkit-keyframes spin {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+body .acceuil .cube3 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  -webkit-animation: spin 50s linear infinite;
+          animation: spin 50s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+body .acceuil .cube3 .face3 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+body .acceuil .cube3 .top {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateX(90deg) translateZ(100px);
+}
+body .acceuil .cube3 .bottom {
+  background: linear-gradient(346deg, rgb(153, 24, 24) 0%, rgb(87, 3, 3) 73%);
+  transform: rotateX(-90deg) translateZ(100px);
+}
+body .acceuil .cube3 .right {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateY(90deg) translateZ(100px);
+}
+body .acceuil .cube3 .left {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateY(-90deg) translateZ(100px);
+}
+body .acceuil .cube3 .front {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateX(0deg) translateZ(100px);
+}
+body .acceuil .cube3 .back {
+  background: linear-gradient(6deg, rgb(91, 3, 8) 0%, rgb(25, 46, 254) 88%);
+  transform: rotateX(-180deg) translateZ(100px);
+}
+body a:nth-child(4) {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+body a {
+  position: relative;
+  z-index: 10000;
+  background: #444;
+  color: rgba(210, 21, 24, 0.811);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 0.1vw;
+  padding: 10px 20px;
+  transition: 0.5s;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+body a:hover {
+  letter-spacing: 0.25em;
+  background: var(--clr);
+  color: var(--clr);
+  box-shadow: 0 0 35px var(--clr);
+}
+body a:hover i::after {
+  width: 20px;
+  left: 80%;
+}
+body a:hover i::before {
+  width: 20px;
+  left: 20%;
+}
+body a::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #27282c;
+}
+body a span {
+  font-family: "Russo One", sans-serif;
+  position: relative;
+  z-index: 1;
+}
+body a i {
+  position: absolute;
+  inset: 0;
+  display: block;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+body a i::before {
+  content: "";
+  position: absolute;
+  border: 2px solid rgb(1, 247, 255);
+  left: 80%;
+  width: 12px;
+  height: 8px;
+  bottom: -3.5px;
+  background: #27282c;
+  transition: 0.5s;
+  transform: translateX(-50%);
+}
+body a i::after {
+  content: "";
+  position: absolute;
+  border: 2px solid rgb(1, 247, 255);
+  left: 20%;
+  width: 12px;
+  height: 8px;
+  top: -3.5px;
+  background: #27282c;
+  transition: 0.5s;
+  transform: translateX(-50%);
+}
+body .contact {
+  display: flex;
+}
+body .contact img {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  display: flex;
+  top: 80%;
+  right: 20%;
+}/*# sourceMappingURL=home-style.css.map */
